@@ -1,0 +1,9 @@
+//Getting A String From Input
+#include <iostream>
+using namespace std;
+int main(){
+    char NewString[50];
+    cout<<"Enter the new string\n";
+    cin>>NewString;
+    cout<<"New String is "<<NewString<<endl;
+    }
