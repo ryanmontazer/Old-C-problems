@@ -1,0 +1,11 @@
+//Two Dimensional Arrays, Gets a random two dimensional array and prints it using for loop
+#include <iostream>
+using namespace std;
+int main(){
+    int MyArray [5][2]= {{0,1},{1,2},{2,3},{3,4},{4,5}};//defining an array of 5x2
+    for (int i=0; i<5; i++){
+        for (int j=0; j<2; j++){
+            cout<<"MyArray["<<i<<"]["<<j<<"]="<<MyArray[i][j]<<endl;
+            }
+        }    
+    }

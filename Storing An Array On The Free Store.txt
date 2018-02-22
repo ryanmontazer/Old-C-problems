@@ -1,0 +1,37 @@
+//Storing An Array On The Free Store
+#include <iostream>
+using namespace std;
+class CHILD {
+    public:
+    CHILD () { //default constructor
+        itsAge=1; 
+        itsWeight=10;
+        }
+    ~CHILD(){ //default destructor
+        }
+    int GetAge() const {
+        return itsAge;
+        }
+    int GetWeight() const {
+        return itsWeight;
+        }
+    void SetAge (int age){
+        itsAge=age;
+        }
+    private :
+    int itsAge;
+    int itsWeight;
+    };
+    int main (){
+        CHILD * Family [100];
+        int i;
+        CHILD * pChild;
+        for (i=0;i<100;i++){
+            pChild = new CHILD;
+            pChild -> SetAge (3*(i+1));
+            Family [i]= pChild;
+            }
+        for (i=0; i<100; i++)
+            cout<<"Child #"<<i+1<<": "<<Family[i]->GetAge()<<"years old;"<<endl;
+            
+        }
