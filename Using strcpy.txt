@@ -1,0 +1,12 @@
+//Using strcpy
+#include <iostream>
+#include <string.h>
+using namespace std;
+int main(){
+    char NewString1[] = "Do your best, you'll improve";
+    char NewString2[80];
+    strcpy (NewString2 , NewString1 );
+    cout<<"NewString1 is: "<<NewString1<<endl;
+    cout<<"NewString2 is: "<<NewString2<<endl;
+     
+    }
