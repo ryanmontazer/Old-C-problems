@@ -1,0 +1,20 @@
+// Problem 7 of Leetcode reverse integer
+//Given a 32-bit signed integer, reverse digits of an integer.
+//https://leetcode.com/problems/reverse-integer/description/
+#include <iostream>
+using namespace std;
+int main(){
+    int n,m;
+    cout<<"Enter the signed number you want to see the reverse\n";
+    cin>>n;
+    m=abs(n);
+    int p;
+    int nreverse=0;
+    while (m>0){
+        p=m%10;
+        nreverse=nreverse*10+p;
+        m=(m-p)/10;
+        }
+    if (n>0) cout <<"Reverse of the number is "<<nreverse;
+    else cout <<"Reverse of the number is "<<-nreverse;
+    }

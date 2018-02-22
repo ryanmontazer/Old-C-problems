@@ -1,0 +1,17 @@
+// Problem 50 of Leetcode implement pow(x,n)
+//https://leetcode.com/problems/powx-n/description/
+#include <iostream>
+using namespace std;
+int main(){
+    cout<<"Enter the first number "; 
+    float x;
+    int n;
+    cin>>x;
+    cout <<"Enter the second number ";
+    cin>>n;
+    float result=1;
+    for (int i=1;i<=n;i++)
+    result=result*x;
+    cout <<result;
+    
+    }

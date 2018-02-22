@@ -1,0 +1,25 @@
+/* write a program to get an integer from user n, where n is the number of integers 
+we want to evaluate their average, and then it would get n integer from the input
+and we would evaluate the avegare, the maximum and minimum of all numbers;*/
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"write the number of numbers you want to evaluate the average, Max and Min of them"<<endl;
+    cin>>n;
+    int input;
+    cin>>input;
+    int sum=input;
+    int Max=input;
+    int Min=input;
+    for (int i=1; i<n; i++){
+        cin>>input;
+        sum=sum+input;
+        if (input>Max) Max=input;
+        if (input<Min) Min=input;
+        }
+    float average= sum/n;
+    cout<<"Average of the numbers is "<<average<<endl;
+    cout<<"Max of the numbers is "<<Max<<endl;
+    cout<<"Min of the numbers is "<<Min<<endl;
+    }

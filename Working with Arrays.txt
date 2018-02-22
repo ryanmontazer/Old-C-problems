@@ -1,0 +1,28 @@
+//Initilaizing and working with multidimensional arrays
+/*a simple 
+    program*/
+#include <iostream>
+using namespace std;
+#define mysize 7
+int main (){
+    int a[6]={0,1,2,3,4,10};//you can initialize an array this way
+    int b[10];//you can define an array without defining the elements of it
+    for (int i=0;i<=9;i++)//always remember arrays start from b[0] and b[1] is the second element of the array
+    b[i]=i*i;//ith element of array b is b[i] not like the function b(i)
+    for (int i=0;i<10;i++)
+    cout<<"b["<<i<<"]="<<b[i]<<endl;
+    int c[mysize+1-1]={1,2,3,4,5,6,7};
+    for (int i=0; i<mysize; i++)
+    cout <<"c["<<i<<"]="<<c[i]<<endl;
+    cout<<a[5]<<endl;
+    int d[]= {10,20,30};//If you define an array this way you can increase size of array by adding members to it
+    d[4]=40;//In this case the undefinied element d[3] would set equal zero by the compiler
+    cout <<d[3]<<endl;
+    //defining two dimensional arrays
+    int e[3][4]={{1,2,3,4},
+             {5,6,7,8},
+             {9,10,11,12}
+        };
+    cout<<e[2][3];
+    int f[3][4];//in two dimension  arrays you must declare size of all dimensions 
+    }

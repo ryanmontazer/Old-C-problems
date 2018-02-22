@@ -1,0 +1,25 @@
+//write problem 5 using while loop
+#include <iostream>
+using namespace std;
+int main (){
+    cout<<"write down the number of numbers you want to evaluate their Average,Max & Min\n";
+    int n;
+    cin>>n;
+    cout <<"Now enter "<<n<<" numbers:\n";
+    float input;
+    cin>>input;
+    float Max, Min, sum;
+    Max=input; Min=input;
+    sum=input;
+    int count=1;
+    while (count<n){
+        cin>>input;
+        sum+=input;
+        if (input>Max) Max=input;
+        if (input<Min) Min=input;
+        count++;
+        }
+    cout <<"The average of the numbers are "<<sum/n<<endl;
+    cout<<"Max of the numbers is "<<Max<<endl;
+    cout<<"Min of the numbers is "<<Min<<endl;
+    }

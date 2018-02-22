@@ -1,0 +1,18 @@
+// Write a program to get 10 grades from the input and evalutae the average
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int count =1;
+    int sum=0;
+    
+    while (count <=10){
+        int input;
+        cin>>input;
+        sum=sum+input;
+        count++;
+        }
+        float average=sum/10;
+        cout<<"the average of the numbers is "<< average<<endl;
+}

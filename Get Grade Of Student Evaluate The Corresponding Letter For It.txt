@@ -1,0 +1,19 @@
+//write a program to get grade of a student as input and print 
+//a letter for the grade of the student. The reference is 
+// 90 and above= A; 80-89=B; 70-79.9=C; 60-69.9=D; <60= Fail;
+#include <iostream>
+using namespace std;
+int main (){
+    cout<<"Enter grade of the student\n";
+    float grade;
+    cin>>grade;
+    if (grade>100) cout<<"Invalid grade";
+        else if (grade>=90) cout <<"gared is A";
+            else if (grade>=80) cout<<"grade is B";
+                else if (grade>=70) cout <<"grade is C";
+                    else if (grade>=60) cout<<"grade is D";
+                        else if (grade>=0) cout<<"student failed";
+                            else if (grade<0) cout<<"Invalid entry";
+    cout<<endl;
+                    
+    }

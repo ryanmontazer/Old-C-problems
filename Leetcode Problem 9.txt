@@ -1,0 +1,21 @@
+// Problem 9 of Leetcode
+//Determine whether an integer is a palindrome. Do this without extra space.
+//https://leetcode.com/problems/palindrome-number/description/
+#include <iostream>
+#include <string>
+using namespace std;
+int main (){
+    cout<<"Enter the number to see if it is palindrome\n";
+    int n;
+    cin>>n;
+    int m=n;
+    int p;
+    int ninverse=0;
+    while (m>0){
+            p=m % 10;
+            ninverse=ninverse * 10 + p;
+            m=(m-p)/10;
+        }
+    if (n-ninverse==0) cout<<n<<" is palindrome\n";
+    else cout<<n<<" is not palindrome";
+    }

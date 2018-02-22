@@ -1,0 +1,15 @@
+//Using array as an argument of a function and print the array
+#include <iostream>
+using namespace std;
+//write a program whihc a function has has an array in it's argument
+void TypeFunction (int MyArray[], int m){
+           
+           for (int i=0; i<m; i++)
+           cout<<"a["<<i<<"]="<<MyArray[i]<<",";
+    }
+    
+int main (){
+    int a[10]= {0,1,2,3,4,5,6,7,8,9};
+                   
+    TypeFunction (a,10);//when you pass a it shouldn't have [] because it is already an array
+    }

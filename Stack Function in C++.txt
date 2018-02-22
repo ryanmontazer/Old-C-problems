@@ -1,0 +1,15 @@
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main(){
+	stack <int> S;
+  stack <string> S2;
+  S.push(3);
+  S.push(2);
+  S.pop();
+	if (S.empty())
+  	cout << "Stack is empty" << endl;
+  // S.empty == false  equals  !S.empty()
+  S.top()++;
+}

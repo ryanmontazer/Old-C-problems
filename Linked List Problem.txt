@@ -1,0 +1,73 @@
+//A program working with linked list
+
+#include <iostream>
+using namespace std;
+
+class Node {
+  public :
+	int key;
+  Node * next;
+  Node (int k){
+  	key = k;
+    next = NULL;
+  }
+};
+
+class LinkedList {
+  private:
+	Node * head = NULL;
+ 
+  public:
+  Node * search (int k){
+  	Node * x = head;
+    while (x != NULL && x->key != k){
+    	x = x->next;
+    }
+    return x;
+  };
+  
+  void Insert (int k){
+    Node * x = new Node(k);
+    x->next = head;
+    head = x;
+  }
+  
+  void Delete (int k){
+    Node * x = head;
+    Node * parent = NULL;
+    while (x != NULL && x->key != k){
+      parent = x;
+      x = x->next;
+    }
+  	
+    if (x == NULL){
+    	cout << "item not found" << endl;
+      return;
+    }
+    
+    if (parent == NULL){
+    	head = head->next;
+    }
+    else
+      parent->next = x->next;
+  }
+  
+  void print (){
+  Node * x=head;
+    if (head==NULL) 
+      cout << "Linked list is empty" << endl;
+    while (x != NULL){
+      cout << x->key << " ";
+      x= x-> next;
+    }
+     
+  }
+};
+
+int main(){
+  LinkedList L;
+  L.Insert (2);
+  L.Delete (3);
+	L.print();
+  L.search(2);
+}

@@ -1,0 +1,13 @@
+// write a program that calculates the squres and cubes of the numbers 
+//from 0 to 10 and uses tabs to print them in a beautiful table;
+//Each tab is 7 space;
+#include <iostream>
+using namespace std;
+int main(){
+    cout <<"number  square  cube\n";
+    for (int i=0; i<=3; i++)
+        cout<<i<<"\t"<<i*i<<"\t"<<i*i*i<<endl;
+    for (int i=4; i<=9; i++)
+        cout<<i<<"\t"<<i*i<<"      "<<i*i*i<<endl;
+    cout<<"10      100     1000"<<endl;
+    }

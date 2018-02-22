@@ -1,0 +1,23 @@
+//write a program to get a positive integer and reverse the number
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter your number";
+    cin >>n;
+    int m=n; 
+    int digit=0;
+    while (n>0){
+        n=(n-(n % 10))/10;
+        digit++;
+        };
+    
+    int b[digit];
+    for (int j=digit; j>=0; j--){
+        b[j]=m % 10;
+        m=(m-(m % 10))/10;
+        
+        };
+        for (int j=0;j<digit;j++ )
+        cout<<b[digit-j];
+    }
