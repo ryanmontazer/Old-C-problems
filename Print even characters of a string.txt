@@ -1,0 +1,13 @@
+// Write a program to get an string from input and display each letter of it one by one in output
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+int main (){
+    string mystring;
+    cout<<"Enter Your String"<<endl;
+    cin>>mystring;
+    unsigned int i;
+    for (i=0; i<mystring.length(); i++)
+    cout<<i+1<<" th character of "<<mystring<<" is: "<<mystring.at(i)<<endl;
+    }

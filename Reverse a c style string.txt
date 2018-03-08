@@ -1,0 +1,16 @@
+//1.2 write code to reverse a Cstyle string. C-string means that "abcd" is represented as five characters, including the null character
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main (){
+        string str, strcopy;
+        cout<<"Enter your C-style string to reverse it"<<endl;
+        cin>>str;
+        unsigned int i,n;
+        n=str.length();
+        strcopy=" " ;
+        for (i=1; i<=n; i++)
+        strcopy+=str.at(n-i);
+        cout<<strcopy<<endl;
+    }
